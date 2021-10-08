@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">RandomFilmK</string>
+    <string name="next">Следующий фильм</string>
+    <array name="movies" >
+        <item>Inception</item>
+        <item>Truman Show</item>
+    </array>
+
 </resources>
