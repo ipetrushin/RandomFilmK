@@ -15,11 +15,13 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/next"
         android:onClick="onNextClick"
         android:textSize="30sp"
         />
 
     <Button
+        android:text="@string/reset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClearClick"

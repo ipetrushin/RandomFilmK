@@ -1,9 +1,16 @@
 <resources>
     <string name="app_name">RandomFilmK</string>
     <string name="next">Следующий фильм</string>
-    <array name="movies" >
+    <string name="reset">Начать заново</string>
+    <string-array name="movies" >
         <item>Inception</item>
         <item>Truman Show</item>
-    </array>
+        <item>Mask</item>
+        <item>Matrix</item>
+        <item>Matrix 2 </item>
+        <item>Matrix 3 </item>
+        <item>Matrix 4 keke </item>
+        <item>Bee movie</item>
+    </string-array>
 
 </resources>
