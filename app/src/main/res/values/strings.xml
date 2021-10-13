@@ -2,7 +2,7 @@
     <string name="app_name">RandomFilmK</string>
     <string name="next">Следующий фильм</string>
     <string name="reset">Начать заново</string>
-    <string-array name="movies" >
+    <string-array name="movies">
         <item>Inception</item>
         <item>Truman Show</item>
         <item>Mask</item>
