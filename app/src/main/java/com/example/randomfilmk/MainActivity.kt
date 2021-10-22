@@ -7,16 +7,21 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.TextView
+import com.google.gson.Gson
+import java.io.InputStream
+import java.io.InputStreamReader
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var movies : Array<String>;
     val r = Random()
+    val m = Movie("Inception", 2010, 9.0f)
+
 
     override fun onStart() {
         super.onStart()
-        Log.d("mytag", "onStart()")
+        Log.d("mytag", "onStart()" )
     }
 
     override fun onStop() {
@@ -29,6 +34,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         movies = resources.getStringArray(R.array.movies)
         Log.d("mytag", movies[0])
+        // открываем файл
+        val movies_stream = resources.openRawResource(R.raw.movies)
+        val gson = Gson() // конвертор из JSON обратно
+        val movies_data = gson.fromJson(InputStreamReader(movies_stream), Movies::class.java)
+
+
     }
 
     fun onNextClick(view: View) {

@@ -1,0 +1,18 @@
+{ "movies": [
+   {
+    "name" : "Inception",
+    "year": 2010,
+    "rating": 8.8
+  },
+  {
+    "name" : "Matrix",
+    "year": 1999,
+    "rating": 8.2
+  },
+  {
+    "name" : "13th floor",
+    "year": 1999,
+    "rating": 8.1
+  }
+  ]
+}
