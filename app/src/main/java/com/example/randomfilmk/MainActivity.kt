@@ -1,6 +1,7 @@
 package com.example.randomfilmk
 
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -38,6 +39,13 @@ class MainActivity : AppCompatActivity() {
         val movies_stream = resources.openRawResource(R.raw.movies)
         val gson = Gson() // конвертор из JSON обратно
         val movies_data = gson.fromJson(InputStreamReader(movies_stream), Movies::class.java)
+        Log.d("mytag", "Loaded movies ${movies_data.movies.size}")
+
+        val pref = getPreferences(Context.MODE_PRIVATE)
+        val editor = pref.edit()
+        editor.putString("name", "Vasya")
+        editor.apply()
+        Log.d("mytag", "name:" + pref.getString("name", ""))
 
 
     }
